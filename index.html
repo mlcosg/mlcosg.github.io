@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bring in Bootstrap Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles_index.css">
+    <title>Project Main Page</title>
+</head>    
+<body>
+
+<!-- Navigation Bar & Titles -->
+<header>
+    <nav class="navbar navbar-expand-sm">
+    <a href="index.html" class="navbar-brand"><h4>Project Main</h4></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <!-- Dropdown Menu for Visualizations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="visualizations/index.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Visualizations</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="visualizations/viz1.html">Sightings by Year</a>
+                        <a class="dropdown-item" href="visualizations/viz2.html">Sightings by Weekday</a>
+                        <a class="dropdown-item" href="visualizations/viz3.html">Correlations</a>
+                        <a class="dropdown-item" href="visualizations/viz4.html">Visualizing Correlation</a>
+                    </div>
+                </li> 
+                <!-- Dropdown Menu for Comparisons -->
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="comparisons/.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Comparisons</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="comparisons/outliers.html">Comparisons-Outliers</a>
+                        <a class="dropdown-item" href="comparisons/visualization.html">Comparisons-Visualizations</a>
+                    </div>
+                </li> 
+                <!-- Dropdown Menu for Data -->                                        
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="data/AboutData.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Data</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="data/AboutData.html">About the Data</a>
+                        <a class="dropdown-item" href="data/DataTable.html">Data Table</a>
+                    </div>
+                </li>                    
+            </ul>
+        </div>
+    </nav>
+<header>           
+
+<!--Content for Web Page -->
+<h1>UCD Data Analytics Bootcamp - Project 1</h1>    
+    <section>
+        <p>
+            Hello! My name is Marcia and this website is the *first* website I have ever 
+            made! And it was coded "from scratch," meaning I coded all of the HTML and CSS 
+            myself! This website is in fulfilment of the "Web Design Challenge" requirements 
+            for the UCD Data Visualization certification course I am currently taken. In other 
+            words, this website is my homework assignment!<br></br>
+            Additionally, the content for this website is pulled from my first project 
+            for the same course, which was a semi-collaborative group effort. My group decided 
+            to examine publically available data from the National UFO Reporting Center, which 
+            we downloaded from Kaggle.com. We collaboratively cleaned and transformed most of the 
+            data together, then chose our own analytic topics to pursue. This website summarizes 
+            my analysis of the UFO data!<br></br>
+            I was mostly interested in examining trends over time and was curious whether certain 
+            sightings of objects might have greater reliability over others, and if so, then it's
+            likely we should see some kind of pattern in those sightings over time.<br></br>
+            For this analysis I looked at how long objects were sighted for (duration in seconds) 
+            by the shape of the object over time. I started by looking at the average duration of 
+            sightings by shape (i.e. the means and errors) for observations reported between 2000 
+            and 2014. I also looked at the average duration of sightings by shape for observations 
+            by day of week. I was curious to see if there were any decernable patterns by day of 
+            week. I finish the analysis by looking at some correlations.      
+        </p>  
+    </section>
+
+<!-- Bring in JavaScript Files from CDNs-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>

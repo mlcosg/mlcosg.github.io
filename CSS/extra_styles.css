@@ -1,0 +1,82 @@
+/* When content has been loaded to pages
+review video:
+https://www.youtube.com/watch?v=dcCCOiQ1ZuM&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=8 */
+
+h1  {
+    color: rgba(4, 102, 248, 0.89);
+    opacity:1;
+    background:none;
+}
+h2 {
+    color: rgba(4, 102, 248, 0.89);
+    /* opacity:0.5; */
+    background:none;        
+}
+
+header{
+    background: black;
+    padding: 20px;
+    /* other option to padding is "margin" */
+}
+section{
+    background: none;
+    opacity:0.7;
+    color: rgb(235, 233, 233);
+    padding: 20px;
+    display:flex;
+}  
+section div{
+    background: grey;
+    width:100px;
+    margin:1px;
+}
+
+/* Sections with class= "feature-box" */
+section.feature-box {
+    background: green;
+    width:100px;
+    margin:1px;
+}
+
+div{
+    background: red;
+    margin:auto;
+    display: inline-block;  
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+li{
+    display:inline-block;
+    margin-right: 20px;
+    display: inline-flex; 
+}
+footer{
+    background:none;
+    color:black;
+    padding: 20px; 
+}
+body{
+    background:none;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+button{
+    background: rgb(60, 60, 160);
+    border: none;
+    color: black;
+}
+#big-font{
+    font-size: 40px;
+  }
+
+#small-font {
+    font-size: 10px;
+  }  
+#bold-font{
+    font-weight: bold;
+  }

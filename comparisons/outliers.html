@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bring in Bootstrap Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles_index.css">
+    <title>Comparisons-Outliers</title>
+</head>    
+<body>
+
+
+<!-- Navigation Bar & Titles -->
+<header>
+    <nav class="navbar navbar-expand-sm">
+    <a href="../index.html" class="navbar-brand"><h4>Project Main</h4></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <!-- Dropdown Menu for Visualizations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../visualizations/index.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Visualizations</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../visualizations/viz1.html">Sightings by Year</a>
+                        <a class="dropdown-item" href="../visualizations/viz2.html">Sightings by Weekday</a>
+                        <a class="dropdown-item" href="../visualizations/viz3.html">Correlations</a>
+                        <a class="dropdown-item" href="../visualizations/viz4.html">Visualizing Correlation</a>
+                    </div>
+                </li> 
+                <!-- Dropdown Menu for Comparisons -->
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Comparisons</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="outliers.html">Comparisons-Outliers</a>
+                        <a class="dropdown-item" href="visualization.html">Comparisons-Visualizations</a>
+                    </div>
+                </li> 
+                <!-- Dropdown Menu for Data -->                                        
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../data/AboutData.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Data</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../data/AboutData.html">About the Data</a>
+                        <a class="dropdown-item" href="../data/DataTable.html">Data Table</a>
+                    </div>
+                </li>                    
+            </ul>
+        </div>
+    </nav>
+<header>        
+
+<!-- Webpage Content -->   
+<!-- Charts in Bootstrap Grid Layout  -->
+<h1>Comparisons - Outliers</h1> 
+    <div class = "container">  
+        <div class="row">
+            <div class="col">
+                <section class="features">
+                    <figure>
+                        <img src="../assets/images/OutliersYear.PNG" alt="All UFO Shapes">
+                        <figcaption>Chart 1: Identifying Outliers by Year, 2000-2014</figcaption>
+                    </figure>
+                </section>
+            </div>
+            <div class="col">
+                <section class="features">
+                    <figure>
+                        <img src="../assets/images/OutliersWeekday.PNG" alt="All UFO Shapes">
+                        <figcaption>Chart 2: Identifying Outliers by Weekday, 2000-2014 (Monday = 1)</figcaption>
+                    </figure>
+                </section>
+            </div>                          
+        </div> 
+        <div class="row justify-content-center">
+            <div class="col">    
+                <section class="features">
+                    <figure>
+                        <img src="../assets/images/OutliersTable.PNG" alt="All UFO Shapes">
+                        <figcaption>Chart 3: Outliers in the Data</figcaption>
+                    </figure>
+                </section>    
+            </div> 
+        </div> 
+    </div>     
+
+<!-- Description of Charts & Outcomes -->
+    <section>
+        <p>
+            Chart 1 - Identifying Outliers by Year, 2000-2014 <br>
+            It is clear this dataset has some extreme outliers in duration of sightings, 
+            especially with respect to years 2002 (shape = light); 2010 
+            (shape = no shape provided); and 2012 (shape = light). Ideally 
+            you'd want to exclude these outliers prior to further analysis so 
+            long as there is no specific reason to keep the observations in 
+            the dataset.<br></br>
+    
+            Chart 2 - Identifying Outliers by Weekday <br>
+            Here, Monday = 1. This chart shows the major outliers identified previously 
+            (occurring in 2002, 2010, 2012) seem to have occurred on a Thursday, Friday, 
+            Saturday, and Sunday. Until these outliers are dropped, there is no reason to 
+            proceed with analysis.<br></br>
+    
+            Chart 3 - Finding & Dropping the Major Outliers <br>
+            After examining the dataset in Excel, you can see the top 3 outliers are in 
+            the years where disturbances were identified in Chart 1 (occurring in 2002, 
+            2010, 2012), and all observations in the top 10 fall on the days identified 
+            in Chart 2 (Thurs-Sun).<br></br>
+    
+            Furthermore, after examining the notes field included in the dataset, in most cases 
+            of sightings reported of durations longer than 5 hours were cases where the 
+            observer reported seeing objects on multiple nights. I decided to drop all 
+            observations from the dataset that were for durations over 5 hours long. 
+            This reduced the size of the dataset from 56,739 to 56,451 (-288 obsv). 
+    
+        </p>  
+    </section>
+
+<!-- Bring in JavaScript Files from CDNs-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
