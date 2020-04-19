@@ -1,0 +1,111 @@
+/* When content has been loaded to pages
+review video:
+https://www.youtube.com/watch?v=dcCCOiQ1ZuM&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=8 */
+/* https://www.youtube.com/watch?v=87ONyGaOlh4 */
+
+h1  {
+    background:none;
+    padding: 10px;
+    /* Font-Related CSS */
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(4, 69, 248, 0.89);
+    opacity:1;
+}
+h2 {
+    background:none;  
+    padding: 30px;
+    /* Font-Related CSS */
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(4, 102, 248, 0.89);
+    opacity:1;
+}
+h3 {
+    background:none;  
+    padding: 30px;
+    /* Font-Related CSS */
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(4, 102, 248, 0.89);
+    opacity:1;
+}
+h4 {
+    background:black;  
+    padding: 10px;
+    border-radius: 5px;
+    /* Font-Related CSS */
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(4, 102, 248, 0.89);
+    opacity:1;
+}
+header{
+    background: black;
+    /* background-image: url(../assets/images/Header.PNG);
+    background-size: 100%;
+    background-position: center; */
+    /* padding: 20px; */
+    /* other option to padding is "margin" */
+}
+section{
+    background: black;
+    padding: 30px;
+    display:flex;
+    /* Font-Related CSS */
+    color: rgb(235, 233, 233);
+    opacity:0.8;
+}  
+.features{
+    background: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    /* Font-Related CSS */
+    /* color: rgb(235, 233, 233);
+    opacity:0.8; */
+}  
+.features figure{
+    margin: inherit;
+    width: 200px
+}  
+.features figure img{
+    width: 450px
+}  
+
+/* ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+} */
+/* li{
+    display:inline-block;
+    /* margin-right: 20px;
+    display: inline-flex; 
+} */
+body{
+    background: black;
+    margin:0;
+    padding:0;
+}
+.navbar{
+    padding: 10px;
+    background: rgb(9, 196, 9);
+}
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: black;
+    border-radius: 4px;
+}  
+#bold-font{
+    font-weight: bold;
+}
+
+p{    
+    background: black;
+    padding: 30px;
+    display:flex;
+    /* Font-Related CSS */
+    color: rgb(235, 233, 233);
+    opacity:0.8;
+}
