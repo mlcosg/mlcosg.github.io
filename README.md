@@ -24,14 +24,14 @@ The data used in this project is compiled and published by the National UFO Repo
 About the Shapes Category:
 During the initial group cleaning of the data, we coded the shape category using the following meta-schema:
 
-"No Shape Provided" = blank, unknown, other
-"Geometric" = triangle, delta, circle, sphere, round, dome, rectangle, cylinder, cone, pyramid, hexagon
-"Light" = light, fireball, flare, flash
-"Changing" = changed, changing
-"Disk" = disk, oval, cigar
-"Teardrop" - teardrop, egg
-"Formation" = formation of multiple objects
-"Miscellaneous" = diamond, chevron, cross, crescent
+"No Shape Provided" = blank, unknown, other <br>
+"Geometric" = triangle, delta, circle, sphere, round, dome, rectangle, cylinder, cone, pyramid, hexagon <br>
+"Light" = light, fireball, flare, flash <br>
+"Changing" = changed, changing <br>
+"Disk" = disk, oval, cigar <br>
+"Teardrop" - teardrop, egg <br>
+"Formation" = formation of multiple objects <br>
+"Miscellaneous" = diamond, chevron, cross, crescent <br>
 
 Further Cleaning of the Data for the Analysis:
 I further limited the scope of my individual analysis by dropping all observations of durations in sightings greater than 5 hours. (For a discussion on this, see “Comparisons-Outliers” under the Comparisons dropdown menu option.)
